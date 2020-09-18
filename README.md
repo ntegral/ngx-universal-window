@@ -11,7 +11,6 @@
 ## Table Of Contents
 
 - [About](#about)
-- [Prerequisites](#prerequisites)
 - [Installation](#installation)
 - [Contributing](#contributing)
 - [License](#license)
@@ -31,4 +30,37 @@ npm install --save @ntegral/ngx-universal-window
 
 ## Getting Started
 
-The simplest way to use `@ntegral/ngx-universal-window` is as follows:
+The simplest way to use `@ntegral/ngx-universal-window` is as follows: After you have added Server-side rendering to your angular project: Open the server.ts file and add the following lines of code before the app function. Note: your <project-name> will need to be replace with the name referenced in you angular.json file. It is typically the first object defined in the "projects": {} object.
+
+```typescript
+import { applyDomino } from '@ntegral/ngx-universal-window';
+
+const BROWSER_DIR = join(process.cwd(), 'dist/<project-name>/browser');
+applyDomino(global, join(BROWSER_DIR, 'index.html'));
+
+// ===== the code listed below is only for reference purposes //
+// The Express app is exported so that it can be used by serverless Functions.
+export function app(): express.Express { ...
+
+```
+
+# Contributing
+
+I would greatly appreciate any contributions to make this project better. Please
+make sure to follow the below guidelines before getting your hands dirty.
+
+1. Fork the repository
+2. Create your branch (`git checkout -b my-branch`)
+3. Commit any changes to your branch
+4. Push your changes to your remote branch
+5. Open a pull request
+
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+## Acknowledgements
+
+- [Angular Universal](https://www.angular.io)
+
+Copyright &copy; 2020 Ntegral Inc.

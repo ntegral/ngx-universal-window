@@ -7,7 +7,7 @@
     }
   ],
   "name": "@ntegral/ngx-universal-window",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Fix for: ReferenceError: window is not defined , angular universal //",
   "main": "./dist/index.js",
   "typings": "./dist/index.d.ts",
