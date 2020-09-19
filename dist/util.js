@@ -23,13 +23,5 @@ function createTransformOptions() {
     return { value };
 }
 function getMockMutationObserver() {
-    return class {
-        observe(node, options) {
-        }
-        disconnect() {
-        }
-        takeRecords() {
-            return [];
-        }
-    };
+    return {};
 }

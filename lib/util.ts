@@ -28,13 +28,5 @@ function createTransformOptions() {
 }
 
 function getMockMutationObserver() {
-    return class {
-        observe(node: any, options: any) {
-        }
-        disconnect() {
-        }
-        takeRecords() {
-            return [];
-        }
-    };
+    return <MutationObserver>{}
 }

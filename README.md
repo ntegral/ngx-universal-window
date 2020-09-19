@@ -1,3 +1,8 @@
+[![npm version](http://img.shields.io/npm/v/@ntegral/ngx-universal-window.svg?style=flat)](https://npmjs.org/package/@ntegral/ngx-universal-window "View this project on npm")
+[![Codecov Coverage](https://img.shields.io/codecov/c/github/ntegral/ngx-universal-window/master.svg?style=flat-square)](https://codecov.io/gh/ntegral/ngx-universal-window)
+[![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=PM2PTQ6Z2XATQ&source=url)
+
 <p align="center">
   <h3 align="center">
     @ntegral/ngx-universal-window
